@@ -7,6 +7,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $message=$_POST['message'];
 
     $stmt=$pdo->prepare("INSERT INTOmessage(chat_id,user_id,message) VALUES(?,?,?)");
-    
+    $stmt->execute([$chat_id,$user_id,$message]);
 
+    echojson_encode(['success'=>true]);exit;
 }
+?>
