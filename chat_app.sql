@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `chats` (
-  `id` int(11) NOT NULL,
+  `id` int AUTO_INCREMENT primary KEY,
   `chat_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -40,9 +40,9 @@ CREATE TABLE `chats` (
 --
 
 CREATE TABLE `messages` (
-  `id` int(11) NOT NULL,
-  `chat_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `id` int AUTO_INCREMENT primary KEY,
+  `chat_id` int NOT NULL,
+  `user_id` int NOT NULL,
   `message` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -54,7 +54,7 @@ CREATE TABLE `messages` (
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int AUTO_INCREMENT primary KEY,
   `username` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
