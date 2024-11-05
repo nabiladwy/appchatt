@@ -1,5 +1,5 @@
 <?php 
-	require 'koneksi.php';
+	require '../koneksi.php';
 
     
 	$chat_id = $_GET['chat_id'];
@@ -92,3 +92,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	exit;
 }
 ?>
+
+<script>
+	const socket = new websocket('ws://localhost:3000');
+
+
+	socket.onmessage = function(event)	{
+		const data = JSON.parse(event.data);
+		loadMessages(); 
+		};
+
+	document.getElementById('messageFrom').addEventListener('submit', function (e) {
+		e.preventDefault();
+
+		const messageData = {
+			chat_id: document.getElemetById('chat_id').value,
+			user_id: document.getElemetById('user_id').value,
+			message: document.getElemetById('message').value
+		};
+		socket.send(JSON.stringify(messageData));
+	});
+
+	const notificationSound = new Audio('notification.mp3');
+
+
+	socket.onmessage = function(event) {
+		const data = JSON.parse(event.data);
+		loadMessages();
+		notificationSound.play();
+	};
+	
+</script>

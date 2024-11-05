@@ -1,5 +1,5 @@
 <?php
-require 'lib/koneksi.php';
+require '../lib/koneksi.php';
 
 $stmt = $pdo->query("SELECT + FROM users");
 $users = $stmt->fetchAll();
