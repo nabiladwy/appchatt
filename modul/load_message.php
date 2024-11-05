@@ -1,5 +1,5 @@
 <?php
-require 'koneksi.php';
+require '../lib/koneksi.php';
 
 $chat_id = $GET['chat_id'];
 $stmt = $pdo->prepare("SELECT messages.*,users.username FROM messages
