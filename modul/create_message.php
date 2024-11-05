@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         User:
         <select name="user_id">
             <?php foreach ($users as $user): ?>
-                <option value="<?= $user['id'] ?>"><?= $user['userrname'] ?></option>
+                <option value="<?= $user['id'] ?>"><?= $user['username'] ?></option>
                 <?php endforeach; ?>
             </select>
             Message: <textarea name="message" required></textarea>
