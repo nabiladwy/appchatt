@@ -2,8 +2,8 @@
 $host = 'localhost';
 $db = 'chat_app';
 $user = 'root';
-$pass = 'nrsykia19';
-$charset = 'utf8mb4';
+$pass = 'majumapan';
+$charset = 'utf8mb4'
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
@@ -12,9 +12,9 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 
-try {
+try{
     $pdo = new PDO($dsn, $user, $pass, $options);
-} catch (\PDOException $e)  {
+} catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 ?>
