@@ -1,5 +1,5 @@
 <?php
-require 'lib/koneksi.php';
+require '../lib/koneksi.php';
 
 $id = $_GET['id'];
 $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");

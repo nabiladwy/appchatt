@@ -1,5 +1,5 @@
 <?php 
-	require 'koneksi.php';
+	require '../koneksi.php';
 
     
 	$chat_id = $_GET['chat_id'];
