@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db = 'chat_app';
 $user = 'root';
-$pass = 'majumapan';
+$pass = 'nabila123';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
