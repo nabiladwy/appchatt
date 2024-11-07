@@ -11,20 +11,19 @@
 <main class="content">
     <div class="container">
     
-<h1 class="h3 mb-3">Messages</h1>
+   
+<h1  style="margin-top:34px;"class="h3 mb-3">Messages</h1>
 <a href="#" class="list-group-item list-group-item-action border-0">
-						<div class="badge bg-success float-right">5</div>
 						<div class="d-flex align-items-start">
-							<img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="rounded-circle mr-1" alt="Vanessa Tucker" width="40" height="40">
-							<div class="flex-grow-1 ml-3">
+							<img src="../img/profile-user.png" class="rounded-circle mr-1" alt="Vanessa Tucker" width="40" height="40">
+							<div class="flex-grow-1 ml-3" style="margin-left:10px; margin-top:5px; float:left;">
 								Vanessa Tucker
-								<div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
 							</div>
 						</div>
 					</a>
 
 
-		<div class="card">
+		<div class="card" style="margin-top:26px;">
 			<div class="row g-0">
 				<div class="col-12 col-lg-5 col-xl-3 border-right">
 
@@ -37,10 +36,9 @@
 					</div>
 
 					<a href="#" class="list-group-item list-group-item-action border-0">
-						<div class="badge bg-success float-right">5</div>
-						<div class="d-flex align-items-start">
+						<div class="d-flex align-items-start" style="margin-top:20px;">
 							<img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="rounded-circle mr-1" alt="Vanessa Tucker" width="40" height="40">
-							<div class="flex-grow-1 ml-3">
+							<div class="flex-grow-1 ml-3" style="margin-left:10px; margin-top:-3px;">
 								Vanessa Tucker
 								<div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
 							</div>
@@ -55,9 +53,8 @@
 							<div class="position-relative">
 								<img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
 							</div>
-							<div class="flex-grow-1 pl-3">
+							<div class="flex-grow-1 pl-3" style="margin-left:10px; margin-top:-4px;">
 								<strong>Sharon Lessman</strong>
-								<div class="text-muted small"><em>Typing...</em></div>
 							</div>
 							
 						</div>
