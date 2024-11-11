@@ -13,7 +13,7 @@
     
    
 <h1  style="margin-top:34px;"class="h3 mb-3">Messages</h1>
-<a href="#" class="list-group-item list-group-item-action border-0">
+<a href="#" class="list-group-item list-group-item-action border-0"> 
 						<div class="d-flex align-items-start">
 							<img src="../img/profile-user.png" class="rounded-circle mr-1" alt="Vanessa Tucker" width="40" height="40">
 							<div class="flex-grow-1 ml-3" style="margin-left:10px; margin-top:5px; float:left;">
